@@ -11,7 +11,7 @@
 ## Getting Started:
 
 ### Install `protoc-gen-grpc-gateway-ts`
-You will need to install `protoc-gen-grpc-gateway-ts` before it could be picked up by the `protoc` command. Just run `go install github.com/grpc-ecosystem/protoc-gen-grpc-gateway-ts`
+You will need to install `protoc-gen-grpc-gateway-ts` before it could be picked up by the `protoc` command. Just run `go install github.com/scrtlabs/protoc-gen-grpc-gateway-ts`
 
 ### Sample Usage:
 `protoc-gen-grpc-gateway-ts` should be used along with the `protoc` command. A sample invocation looks like the following:
@@ -42,7 +42,7 @@ Turn on logging to stderr. Default to false.
 Defines the logging levels. Default to info. Valid values are: debug, info, warn, error
 
 ### Notes:
-Zero-value fields are omitted from the URL query parameter list for GET requests. Therefore for a request payload such as `{ a: "A", b: "" c: 1, d: 0, e: false }` will become `/path/query?a=A&c=1`. A sample implementation is present within this [proto file](https://github.com/grpc-ecosystem/protoc-gen-grpc-gateway-ts/blob/master/integration_tests/service.proto) in the`integration_tests` folder. For further explanation please read the following:
+Zero-value fields are omitted from the URL query parameter list for GET requests. Therefore for a request payload such as `{ a: "A", b: "" c: 1, d: 0, e: false }` will become `/path/query?a=A&c=1`. A sample implementation is present within this [proto file](https://github.com/scrtlabs/protoc-gen-grpc-gateway-ts/blob/master/integration_tests/service.proto) in the`integration_tests` folder. For further explanation please read the following:
 - <https://developers.google.com/protocol-buffers/docs/proto3#default>
 - <https://github.com/googleapis/googleapis/blob/master/google/api/http.proto>
 
